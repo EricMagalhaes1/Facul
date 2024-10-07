@@ -1,0 +1,1 @@
+A unica serie que eu coloquei a pagina de descricao da serie foi arcane

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes da Série</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados */
+    .serie-banner {
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .elenco img {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+    .temporadas {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .temporada {
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-light py-3 mb-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="header-logo">LOGOTIPO</div>
+      <nav><a href="explorer.html" class="text-decoration-none">Explorer</a></nav>
+    </div>
+  </header>
+
+  <!-- Seção 1: Informações Gerais -->
+  <section class="container mb-5">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="assets/img/1031439644-gpg58cvwiaaexus.png" alt="Poster da série" class="img-fluid serie-banner">
+      </div>
+      <div class="col-md-8">
+        <h1>Arcane</h1>
+        <p><strong>Plataforma:</strong> Netflix</p>
+        <p><strong>Gênero:</strong> Ação</p>
+        <p><strong>Lançamento:</strong> 2021</p>
+        <p><strong>Classificação:</strong> 16 anos</p>
+        <p>Em meio ao conflito entre as cidades-gêmeas de Piltover e Zaun, duas irmãs lutam em lados opostos de uma guerra entre tecnologias mágicas e convicções incompatíveis.</p>
+        <button class="btn btn-primary" id="favoriteButton">Adicionar aos Favoritos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 2: Elenco -->
+  <section class="container mb-5 elenco">
+    <h2>Elenco</h2>
+    <div class="row">
+      <!-- Ator 1 -->
+      <div class="col-md-3 text-center">
+        <img src="assets/img/ellapurnel.jpg" alt="Ator 1">
+        <h3>Jinx</h3>
+        <p>Ella Purnnell</p>
+      </div>
+      <!-- Ator 2 -->
+      <div class="col-md-3 text-center">
+        <img src="assets/img/vi.png" alt="Ator 2">
+        <h3>Vi</h3>
+        <p>Hailee Steinfeld</p>
+      </div>
+      <!-- Ator 3 -->
+      <div class="col-md-3 text-center">
+        <img src="assets/img/images.png" alt="Ator 3">
+        <h3>Caitlyn</h3>
+        <p>Katie Leung</p>
+      </div>
+      <!-- Ator 4 -->
+      <div class="col-md-3 text-center">
+        <img src="assets/img/heimer.jpg" alt="Ator 4">
+        <h3>Heimerdinger</h3>
+        <p>Mick Wingert</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 3: Temporadas e Episódios -->
+  <section class="container temporadas">
+    <h2>Temporadas e Episódios</h2>
+    <div class="row">
+      <!-- Temporada 1 -->
+      <div class="temporada">
+        <h4>Temporada 1</h4>
+        <ul>
+          <li>Episódio 1: Entrando na Brincadeira</li>
+          <li>Episódio 2: Alguns mistérios não devem ser desvendados</li>
+          <li>Episódio 3: A violência é essencial para a mudança</li>
+          <li>Episódio 4: Feliz Dia do Progresso!</li>
+          <li>Episódio 5: Todos querem ser meus inimigos</li>
+          <li>Episódio 6: Quando as paredes desabam</li>
+          <li>Episódio 7: O garoto salvador</li>
+          <li>Episódio 8: Água e óleo</li>
+          <li>Episódio 9: O monstro que você criou</li>
+          <!-- Mais episódios -->
+        </ul>
+      </div>
+      <!-- Temporada 2 -->
+      <div class="temporada">
+        <h4>Temporada 2</h4>
+        <ul>
+          <li>Episódio 1: Esperando Lançamento</li>
+
+          <!-- Mais episódios -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('favoriteButton').addEventListener('click', function() {
+      alert('Série adicionada aos favoritos!');
+    });
+  </script>
+</body>
+</html>
