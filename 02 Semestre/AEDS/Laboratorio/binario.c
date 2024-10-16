@@ -10,5 +10,7 @@ void imprimiBinario(int binario){
 
 
 int main(){
-  imprimiBinario(25);
+  int n = 0;
+  scanf("%d", &n);
+  imprimiBinario(n);
 }
