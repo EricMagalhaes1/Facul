@@ -14,4 +14,5 @@ int main(){
 
   printf("TOTAL = R$ %.2lf", salario);
 
+  return 0;
 }

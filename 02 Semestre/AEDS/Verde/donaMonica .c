@@ -20,6 +20,5 @@ int main (){
     printf("%d", C);
   }
 
-
   return 0;
 }

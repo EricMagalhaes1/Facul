@@ -14,8 +14,9 @@ int main(){
   while(minutos >= 60){
   minutos = minutos - 60;
   horas += 1;
- }
+  }
 
- printf("%02d:%02d:%02d",horas, minutos,segundos);
+  printf("%02d:%02d:%02d",horas, minutos,segundos);
 
+  return 0;
 }

@@ -2,9 +2,7 @@
 
 int main(){
   int horas = 24;
-  
   int inicio, fim, total;
-
 
   scanf("%d %d", &inicio, &fim);
 

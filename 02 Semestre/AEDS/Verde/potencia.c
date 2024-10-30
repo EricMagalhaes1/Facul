@@ -14,12 +14,13 @@ int potencia(int a, int b){
 }
 
 int main() {
-    int a = 5;  
-    int b = 3;
+  
+  int a = 5;  
+  int b = 3;
 
-    int resultado = potencia(a , b);
+  int resultado = potencia(a , b);
 
-    printf("A %d elevado a %d = %d \n", a, b, resultado);
+  printf("A %d elevado a %d = %d \n", a, b, resultado);
 
-    return 0;
+  return 0;
 }

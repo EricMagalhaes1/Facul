@@ -13,10 +13,10 @@ int soma_digitos(int n){
 }
 
 int main() {
-    int n = 25437689;  
-    int resultado = soma_digitos(n);
+  int n = 25437689;  
+  int resultado = soma_digitos(n);
 
-    printf("A soma dos digitos de %d e %d\n", n, resultado);
+  printf("A soma dos digitos de %d e %d\n", n, resultado);
 
-    return 0;
+  return 0;
 }

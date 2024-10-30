@@ -34,6 +34,5 @@ int main () {
             printf("-1");
             break;
     }
-
     return 0;
 }

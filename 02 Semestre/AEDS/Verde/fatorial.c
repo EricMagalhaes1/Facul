@@ -10,7 +10,6 @@ int fatorial(int n){
   }
 }
 
-
 int main (){
 
   int n = 20;

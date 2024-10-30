@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 void inverteNumero(int n) {
+    
     if (n == 0) {
         return;
     }
@@ -9,6 +10,7 @@ void inverteNumero(int n) {
     inverteNumero(n / 10);
 }
 int main() {
+    
     int num;
     
     scanf("%d", &num);
@@ -18,7 +20,6 @@ int main() {
     }
 
     inverteNumero(num);
-
     printf("\n"); 
 
     return 0;

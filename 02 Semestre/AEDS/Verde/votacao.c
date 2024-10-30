@@ -53,5 +53,6 @@ int main() {
     printf("Votos nulos: %d\n", votos_nulos);
     printf("Porcentagem de votos em branco: %.2lf%%\n", porcentagem_brancos);
 
+    
     return 0;
 }

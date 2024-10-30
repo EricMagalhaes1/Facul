@@ -16,7 +16,7 @@ int main() {
         total_pessoas++; 
         
         if (gostou == 1) {
-            // Se for do gênero masculino
+            
             if (genero == 'M' || genero == 'm') {
                 total_masculino_gostaram++;
                 if (idade > idade_mais_velho_masc_gostou) {

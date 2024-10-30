@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1730298786 source:c:\faculdade\02 semestre\aeds\laboratorio\aula3010\main.c
+	<stdio.h>
+	"header.h"
+
+1730297432 source:c:\faculdade\02 semestre\aeds\laboratorio\aula3010\header.c
+
+1730298168 c:\faculdade\02 semestre\aeds\laboratorio\aula3010\header.h
+
+1730298808 source:c:\faculdade\02 semestre\aeds\laboratorio\aula3010\header2.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

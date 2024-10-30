@@ -22,4 +22,6 @@ int main(){
   }
 
   printf("%.2f", r);
+
+  return 0;
 }

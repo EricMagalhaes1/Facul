@@ -59,23 +59,25 @@ void Hexadecimal(int num) {
 
 int main(){
 
-int Int;
-float Float;
+    int Int;
+    float Float;
 
-scanf("%d %f" , &Int, &Float);
+    scanf("%d %f" , &Int, &Float);
 
-printf("Decimal: %05d\n", Int);
+    printf("Decimal: %05d\n", Int);
 
-Hexadecimal(Int);
+    Hexadecimal(Int);
 
-Octal(Int);
+    Octal(Int);
 
-printf("Char: %c\n", Int);
+    printf("Char: %c\n", Int);
 
-printf("Com 6 casas decimais: %.6f\n", Float);
+    printf("Com 6 casas decimais: %.6f\n", Float);
 
-printf("Com 2 casas decimais: %.2f\n", Float);
+    printf("Com 2 casas decimais: %.2f\n", Float);
 
-printf("Notação científica (lower): %e\n", Float);
-printf("Notação científica (upper): %E\n", Float);
+    printf("Notação científica (lower): %e\n", Float);
+    printf("Notação científica (upper): %E\n", Float);
+
+    return 0;
 }
