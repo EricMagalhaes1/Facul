@@ -42,7 +42,7 @@ void registrarVenda(char * pVenda, Produto * p, int n){
       p[i].quantidade --;
       return;
     }
-    printf("Venda nâo completada!\ng")
+    printf("Venda nâo completada!\n");
   }
 }
 
