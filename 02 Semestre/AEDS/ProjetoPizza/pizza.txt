@@ -1,0 +1,29 @@
+3
+Margherita
+M
+29.90
+Queijo
+5.00
+Molho de Tomate
+2.50
+;
+Pepperoni
+G
+39.90
+Queijo
+5.00
+Molho de Tomate
+2.50
+Pepperoni
+8.00
+;
+Calabresa
+M
+32.00
+Queijo
+5.00
+Molho de Tomate
+2.50
+Calabresa
+7.00
+;
