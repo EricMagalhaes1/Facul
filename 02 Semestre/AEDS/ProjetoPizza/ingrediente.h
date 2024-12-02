@@ -1,9 +1,11 @@
 #ifndef INGREDIENTE_H
 #define INGREDIENTE_H
 
+//Definir tamanho maximo de ingredientes
 #define MAX_INGREDIENTES 50
 #define MAX_NOME 50
 
+//Definir a struct
 typedef struct {
     int id;
     char nome[MAX_NOME];
