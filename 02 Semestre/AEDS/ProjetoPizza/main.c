@@ -1,79 +1,123 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "pizza.h"
+#include "ingrediente.h"
+#include "pizza.c"
+#include "ingrediente.c"
 
-#define MAX_PIZZA 100
-
-
-void opcao1(Pizza p[], int *qtdPizza){
-    int opcao = 0;   
-    
+void menuPizza(Pizza pizzas[], int qtdPizza){
+     int op;
     do {
-
-        printf("\n=== Sistema de Gerenciamento de Pizzaria ===\n");
-        printf("1. Adionar Pizzas\n");
-        printf("2. Gerenciar \n");
-        printf("3. Vizualisar Pizzas \n");
-        printf("4. Sair\n");
-        printf("==========================\n");
+        printf("\nMenu de Pizzas:\n");
+        printf("1. Adicionar Pizza\n");
+        printf("2. Visualizar Pizzas\n");
+        printf("3. Editar Pizza\n");
+        printf("4. Remover Pizza\n");
+        printf("5. Voltar ao Menu Principal\n");
         printf("Escolha uma opcao: ");
-        scanf("%d", &opcao);
+        scanf("%d", &op);
 
-        switch (opcao) {
+        switch (op) {
             case 1:
-                cadastrarPizza(p,qtdPizza);
+                adicionarPizza(pizzas, &qtdPizza);
                 break;
             case 2:
-                visualizarPizzas(p,*qtdPizza);
+                visualizarPizzas(pizzas, qtdPizza);
                 break;
-            /*
             case 3:
-                opcao3();
+                editarPizza(pizzas, qtdPizza);
                 break;
             case 4:
-                sair();
-                break;*/
+                removerPizza(pizzas, &qtdPizza);
+                break;
+            case 5:
+                break;
             default:
-                printf("\nOpção inválida. Tente novamente.\n");
+                printf("Opção inválida.\n");
         }
-    } while (opcao != 0);
+    } while (op != 5);
 }
 
-
-
-int main() {
-    int opcao;
-    int qtdPizza = 0;
-   
-    Pizza p[MAX_PIZZA];
-    //Ingrediente ing[100];
-
+void menuIngredientes(Ingrediente ingredientes[],int qtdIngredientes){
+    int op;
     do {
-        printf("\n=== Sistema de Gerenciamento de Pizzaria ===\n");
-        printf("1. Gerenciar Pizzas\n");
-        printf("2. Gerenciar Ingredientes\n");
-        printf("3. Registrar Venda\n");
-        printf("4. Exportar Dados\n");
-        printf("5. Importar Dados\n");
-        printf("0. Sair\n");
-        printf("Escolha uma opção: ");
-        scanf("%d", &opcao);
+        printf("\nMenu de Ingredientes:\n");
+        printf("1. Adicionar Ingrediente\n");
+        printf("2. Visualizar Ingredientes\n");
+        printf("3. Editar Ingrediente\n");
+        printf("4. Remover Ingrediente\n");
+        printf("5. Voltar ao Menu Principal\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &op);
 
-        switch (opcao) {
+        switch (op) {
             case 1:
-                opcao1(p, &qtdPizza);
+                adicionarIngrediente(ingredientes, &qtdIngredientes);
                 break;
-            /*case 2:
-                opcao2();
+            case 2:
+                visualizarIngredientes(ingredientes, qtdIngredientes);
                 break;
             case 3:
-                opcao3();
+                editarIngrediente(ingredientes, qtdIngredientes);
                 break;
             case 4:
-                sair();
-                break;*/
+                removerIngrediente(ingredientes, &qtdIngredientes);
+                break;
+            case 5:
+                break;
             default:
-                printf("\nOpção inválida. Tente novamente.\n");
+                printf("Opção inválida.\n");
         }
-    } while (opcao != 0);
+    } while (op != 5);
+}
+
+int main() {
+    Pizza pizzas[MAX_PIZZAS];
+    Ingrediente ingredientes[MAX_INGREDIENTES];
+    int qtdPizza = 0;
+    int qtdIngredientes = 0;
+    int escolha;
+
+    do {
+        printf("\nMenu:\n");
+        printf("1. Gerenciar Pizzas\n");
+        printf("2. Gerenciar Ingredientes\n");
+        printf("3. Exportar Pizzas\n");
+        printf("4. Importar Pizzas\n");
+        printf("5. Sair\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &escolha);
+
+        switch (escolha) {
+            case 1: 
+                menuPizza(pizzas,qtdPizza);
+                break;
+            case 2: 
+                menuIngredientes(ingredientes,qtdIngredientes);
+                break;
+            case 3: {
+                char filename[50];
+                printf("Digite o nome do arquivo para exportar: ");
+                scanf("%49s", filename);
+                exportarPizzas(pizzas, qtdPizza, filename);
+                break;
+            }
+
+            case 4: {
+                char filename[50];
+                printf("Digite o nome do arquivo para importar: ");
+                scanf("%49s", filename);
+                importarPizzas(pizzas, &qtdPizza, filename);
+                break;
+            }
+
+            case 5:
+                printf("Saindo do sistema...\n");
+                break;
+
+            default:
+                printf("Opção inválida.\n");
+        }
+    } while (escolha != 3);
+
+    return 0;
 }
