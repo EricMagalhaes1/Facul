@@ -3,17 +3,20 @@
 #include "ingrediente.h"
 
 void adicionarIngrediente(Ingrediente* ingredientes, int* num_ingredientes) {
+    //Verifica se pode ser adicionado mais ingredientes
     if (*num_ingredientes >= MAX_INGREDIENTES) {
         printf("Limite de ingredientes atingido.\n");
         return;
     }
+    //Cria nova instancia de Ingredientes
     Ingrediente novo_ingrediente;
-    novo_ingrediente.id = *num_ingredientes + 1; // ID simples
+    novo_ingrediente.id = *num_ingredientes + 1; // Iteração de id "automatico"
     printf("Nome do Ingrediente: ");
     scanf("%s", novo_ingrediente.nome);
     printf("Preço: ");
     scanf("%f", &novo_ingrediente.preco);
 
+    //Inseri a nova instancia de
     ingredientes[*num_ingredientes] = novo_ingrediente;
     (*num_ingredientes)++;
 }
