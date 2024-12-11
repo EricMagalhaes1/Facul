@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Séries</title>
+    <!-- Link do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <h1><a href="index.html" class="text-white">Logo do Site</a></h1>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="explorer.html">Explorar</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="profile.html">Perfil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Caixa de Pesquisa -->
+    <div class="container mt-4">
+        <h2>Explorador de Séries</h2>
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <input type="text" id="search-input" class="form-control" placeholder="Pesquisar série...">
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block" id="search-btn">Pesquisar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resultados da Pesquisa -->
+    <div class="container">
+        <div id="search-results" class="row">
+            <!-- Os cards das séries de resultado serão injetados aqui -->
+        </div>
+    </div>
+
+    <!-- Script do Bootstrap e do JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../app.js"></script>
+</body>
+</html>

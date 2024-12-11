@@ -1,0 +1,31 @@
+
+{
+  "author": {
+      "id": 1,
+      "name": "Eric Magalhaes",
+      "course": "Ciência da Computação",
+      "email": "ericmagalhaes.contato@gmail.com",
+      "facebook": "Não possuo!!!",
+      "twitter": "https://twitter.com/ArquivedKirvas",
+      "instagram": "https://instagram.com/lnleric",
+      "bio": "Estudante apaixonado por tecnologia, programação e desenvolvimento web."
+  },
+
+ "favorite_series": [
+        {
+            "id": 1,
+            "tmdb_series_id": 1399,
+            "user_id": 1
+        },
+        {
+            "id": 2,
+            "tmdb_series_id": 1412,
+            "user_id": 1
+        },
+        {
+            "id": 3,
+            "tmdb_series_id": 1316,
+            "user_id": 1
+        }
+    ]
+}
